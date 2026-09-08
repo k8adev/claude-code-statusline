@@ -1,5 +1,7 @@
 # claude-code-statusline
 
+**English** · [Português (BR)](README.pt-BR.md)
+
 ![screenshot](screenshot.png)
 
 Status line for Claude Code: project and branch, context window, session time, usage limits.
@@ -10,8 +12,20 @@ Status line for Claude Code: project and branch, context window, session time, u
 
 ## Install
 
+### Let Claude install it
+
+Paste this into a Claude Code session:
+
+```text
+Install https://github.com/k8adev/claude-code-statusline as my status line:
+clone it into ~/.claude/claude-code-statusline, point statusLine in
+~/.claude/settings.json at its statusline.sh, and check that jq is installed.
+```
+
+### Manual
+
 ```sh
-git clone https://github.com/k8adev/claude-code-statusline ~/Projects/k8adev/claude-code-statusline
+git clone https://github.com/k8adev/claude-code-statusline ~/.claude/claude-code-statusline
 ```
 
 `~/.claude/settings.json`:
@@ -20,7 +34,7 @@ git clone https://github.com/k8adev/claude-code-statusline ~/Projects/k8adev/cla
 {
   "statusLine": {
     "type": "command",
-    "command": "bash ~/Projects/k8adev/claude-code-statusline/statusline.sh"
+    "command": "bash ~/.claude/claude-code-statusline/statusline.sh"
   }
 }
 ```
