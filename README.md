@@ -25,7 +25,9 @@ git clone https://github.com/k8adev/claude-code-statusline ~/Projects/k8adev/cla
 }
 ```
 
-Requires bash, jq, git, a truecolor terminal and a [Nerd Font](https://www.nerdfonts.com/).
+Requires [bash](https://www.gnu.org/software/bash/), [jq](https://jqlang.github.io/jq/),
+[git](https://git-scm.com/), a [truecolor](https://github.com/termstandard/colors) terminal and a
+[Nerd Font](https://www.nerdfonts.com/).
 
 ## Options
 
