@@ -1,6 +1,6 @@
 # claude-code-statusline
 
-[English](README.md) · **Português (BR)**
+[English 🇺🇸](README.md) · **Português 🇧🇷**
 
 ![screenshot](screenshot.png)
 
