@@ -47,15 +47,17 @@ Requires [bash](https://www.gnu.org/software/bash/), [jq](https://jqlang.github.
 
 All via environment variables.
 
-| Variable | Default | What |
+| Variable | Default | Description |
 |---|---|---|
 | `CLAUDE_STATUSLINE_LIMITS` | `auto` | Line 3: `auto` (hide when tmux-vitals shows it), `always`, `never` |
 | `CLAUDE_STATUSLINE_CTX_WARN` / `_CTX_CRIT` | `30` / `60` | Context bar turns yellow / red above these % |
 | `CLAUDE_STATUSLINE_LIMIT_WARN` / `_LIMIT_CRIT` | `50` / `80` | Usage limits turn yellow / red above these % |
-| `CLAUDE_STATUSLINE_ICON_DIR` | `󰉋` | Folder icon |
-| `CLAUDE_STATUSLINE_ICON_CLOCK` | `󰥔` | Session time icon |
-| `CLAUDE_STATUSLINE_ICON_RESET` | `󰑐` | Reset countdown icon |
+| `CLAUDE_STATUSLINE_ICON_DIR` | `U+F024B` | Folder icon |
+| `CLAUDE_STATUSLINE_ICON_CLOCK` | `U+F0954` | Session time icon |
+| `CLAUDE_STATUSLINE_ICON_RESET` | `U+F0450` | Reset countdown icon |
 | `CLAUDE_STATUSLINE_RL_CACHE` | `~/.claude/cache/rate-limits.json` | Where the rate limits are written for tmux-vitals |
+
+Icons are [Nerd Font](https://www.nerdfonts.com/cheat-sheet) glyphs, given here by codepoint since GitHub can't render them; the screenshot shows how they look.
 
 Context thresholds are low on purpose: Anthropic's [best practices](https://code.claude.com/docs/en/best-practices)
 say performance degrades as the window fills, and `used_percentage` counts input tokens only.

@@ -47,15 +47,17 @@ Requer [bash](https://www.gnu.org/software/bash/), [jq](https://jqlang.github.io
 
 Todas via variáveis de ambiente.
 
-| Variável | Padrão | O que faz |
+| Variável | Padrão | Descrição |
 |---|---|---|
 | `CLAUDE_STATUSLINE_LIMITS` | `auto` | Linha 3: `auto` (oculta quando o tmux-vitals mostra), `always`, `never` |
 | `CLAUDE_STATUSLINE_CTX_WARN` / `_CTX_CRIT` | `30` / `60` | Barra de contexto fica amarela / vermelha acima destes % |
 | `CLAUDE_STATUSLINE_LIMIT_WARN` / `_LIMIT_CRIT` | `50` / `80` | Limites de uso ficam amarelos / vermelhos acima destes % |
-| `CLAUDE_STATUSLINE_ICON_DIR` | `󰉋` | Ícone de pasta |
-| `CLAUDE_STATUSLINE_ICON_CLOCK` | `󰥔` | Ícone do tempo de sessão |
-| `CLAUDE_STATUSLINE_ICON_RESET` | `󰑐` | Ícone da contagem de reset |
+| `CLAUDE_STATUSLINE_ICON_DIR` | `U+F024B` | Ícone de pasta |
+| `CLAUDE_STATUSLINE_ICON_CLOCK` | `U+F0954` | Ícone do tempo de sessão |
+| `CLAUDE_STATUSLINE_ICON_RESET` | `U+F0450` | Ícone da contagem de reset |
 | `CLAUDE_STATUSLINE_RL_CACHE` | `~/.claude/cache/rate-limits.json` | Onde os limites são gravados para o tmux-vitals |
+
+Os ícones são glifos da [Nerd Font](https://www.nerdfonts.com/cheat-sheet), indicados pelo codepoint porque o GitHub não os renderiza; o screenshot mostra como aparecem.
 
 Os limiares de contexto são baixos de propósito: as [boas práticas](https://code.claude.com/docs/en/best-practices)
 da Anthropic dizem que a performance cai conforme a janela enche, e `used_percentage` conta só tokens de entrada.
